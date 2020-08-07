@@ -1,4 +1,4 @@
-#fulltable <- read.csv(file = "household_power_consumption.txt", sep= ";")
+fulltable <- read.csv(file = "household_power_consumption.txt", sep= ";")
 table <- subset(fulltable, Date == "1/2/2007" | Date == "2/2/2007")
 
 datetimes <- strptime(paste(table[,"Date"],table[,"Time"]), 
